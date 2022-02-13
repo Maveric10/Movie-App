@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(
+    to left,
+    #f1fee4,
+    #e5fce7,
+    #dbfaeb,
+    #d3f8f0,
+    #cef4f4,
+    #cbf2f5,
+    #c9f1f6,
+    #c7eff7,
+    #c3f0f6,
+    #c0f1f4,
+    #bdf1f1,
+    #bbf2ee
+  );
+  background-repeat: repeat;
+}
+
+.header {
+  margin: 1rem auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form input {
+  width: 25rem;
+  height: 2.5rem;
+  border-radius: 14px;
+  margin-right: 1rem;
+}
+
+.form button {
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 17px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1.5rem;
+    
+}
+
+.cards{
+    border: 1px solid black;
+    
+}
+
+.cards img{
+    width: 30px;
+    height: 20px;
+}
