@@ -45,27 +45,29 @@ function App() {
       <div className="header">
         <h1>Movies Hub</h1>
       </div>
-      <div>
-        <form onSubmit={submitHandler} className="form">
-          <input
-            type="text"
-            placeholder="search something..."
-            value={endPoint}
-            onChange={onChangeHandler}
-          />
-          <button type="submit">search</button>
-        </form>
-        <div className="cards-container" >
-          {container.map((item) => {
-            return (
-              <div className="cards">
-                <img src={item.i.imageUrl} alt="images" />
-                <p>{item.l}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <section className="main-section">
+        
+          <form onSubmit={submitHandler} className="form">
+            <input
+              type="text"
+              placeholder="search something..."
+              value={endPoint}
+              onChange={onChangeHandler}
+            />
+            <button type="submit">search</button>
+          </form>
+          <div className="cards-container">
+            {container.map((item) => {
+              return (
+                <div className="cards">
+                  <img src={item.i.imageUrl} alt="images" />
+                  <p>{item.l}</p>
+                </div>
+              );
+            })}
+          </div>
+        
+      </section>
     </div>
   );
 }
